@@ -1,0 +1,17 @@
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\dotnet.exe
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\dotnet.deps.json
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\dotnet.runtimeconfig.json
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\dotnet.dll
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\ref\dotnet.dll
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\dotnet.pdb
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.csproj.AssemblyReference.cache
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.AssemblyInfoInputs.cache
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.AssemblyInfo.cs
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.csproj.CoreCompileInputs.cache
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.dll
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\ref\dotnet.dll
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.pdb
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.genruntimeconfig.cache
+C:\Users\oneon\OneDrive\Desktop\dotnet\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\oneon\OneDrive\Desktop\dotnet\obj\Debug\net6.0\dotnet.csproj.CopyComplete

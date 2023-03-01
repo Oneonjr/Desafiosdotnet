@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GmtNA1NuyZeZJJpp5gJpVOV715rsQ7AINb7c0gnZyRJ1tkMu4pkASPM1us0IgY9wW6EFXYYSW4Z4c6IeAyUQ5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oneon\\OneDrive\\Desktop\\dotnet\\dotnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oneon\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
