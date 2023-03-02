@@ -1,65 +1,74 @@
 ﻿using Newtonsoft.Json;
 
-// Problema 1
+decimal maiorFaturamento = decimal.MinValue; 
+decimal menorFaturamento = decimal.MaxValue;
+decimal somafaturamentos = 0;
+int quantidadefaturamentos = 0;
+string jsonString = File.ReadAllText("faturamentoJAN.json"); //selecionando arquivo
 
-// Console.Write("Digite um número: ");
-//         int numero = int.Parse(Console.ReadLine());
+// Convertendo o JSON em um objeto
+FaturamentoMes faturamentoMes = JsonConvert.DeserializeObject<FaturamentoMes>(jsonString);
 
-//         int a = 0, b = 1, c = 1;
+// Exibindo as informações do faturamento do mês
+Console.WriteLine($"Faturamento do mês de {faturamentoMes.Mes}/{faturamentoMes.Ano}:");
 
-//         while (c < numero) {
-//             c = a + b;
-//             a = b;
-//             b = c;
-//         }
+//calculando a média
+foreach (var faturamentoDia in faturamentoMes.Faturamento)
+{   
+    if (faturamentoDia.Valor != 0)
+    {
+        somafaturamentos += faturamentoDia.Valor;
+        quantidadefaturamentos ++;
+    }
+}
 
-//         if (c == numero) {
-//             Console.WriteLine($"{numero} pertence à sequência de Fibonacci.");
-//         } else {
-//             Console.WriteLine($"{numero} não pertence à sequência de Fibonacci.");
-//         }
-
-
-//      Problema 2
+decimal media = somafaturamentos / quantidadefaturamentos;
 
 
-// Lê o arquivo JSON a partir do caminho especificado
-            // string jsonFilePath = "C";
-
-            decimal media = 20117 ;
-            string jsonString = File.ReadAllText("faturamentoJAN.json");
-
-            // Converte o JSON em um objeto C# usando a biblioteca Newtonsoft.Json
-            FaturamentoMes faturamentoMes = JsonConvert.DeserializeObject<FaturamentoMes>(jsonString);
-
-            // Exibe as informações do faturamento do mês
-            Console.WriteLine($"Faturamento do mês de {faturamentoMes.Mes}/{faturamentoMes.Ano}:");
-            Console.WriteLine($"A média do faturamento é R$ {media:N2}");
-            Console.WriteLine();
-
-            foreach (var faturamentoDia in faturamentoMes.Faturamento)
-            {
-                if (faturamentoDia.Valor == 0)
-                {
-                    Console.WriteLine($"No dia {faturamentoDia.Data} não houve faturamento.");
-                }
-                else
-                {
-                    Console.WriteLine($"No dia {faturamentoDia.Data} o faturamento foi de R$ {faturamentoDia.Valor:N2}.");
-                }
-            }
-
-            Console.ReadLine();
-        
+Console.WriteLine();
     
+// Mostrando as datas e os faturmentos de todas as datas
+foreach (var faturamentoDia in faturamentoMes.Faturamento)
+{
+    if (faturamentoDia.Valor == 0)
+    {
+        Console.WriteLine($"No dia {faturamentoDia.Data} não houve faturamento.");
+    }
+    else
+    {
+        Console.WriteLine($"No dia {faturamentoDia.Data} o faturamento foi de R$ {faturamentoDia.Valor:N2}.");
+    }
+}
 
-    class FaturamentoDia
+// Verificando maior e menor faturamento.
+foreach (var faturamentoDia in faturamentoMes.Faturamento)
+{
+    if (faturamentoDia.Valor != 0)
+    {
+        if (faturamentoDia.Valor > maiorFaturamento)
+        {
+            maiorFaturamento = faturamentoDia.Valor;
+        }
+
+        if (faturamentoDia.Valor < menorFaturamento)
+        {
+            menorFaturamento = faturamentoDia.Valor;
+        }
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine($"O valor com maior faturamento é de R$ {maiorFaturamento:N2}");
+Console.WriteLine($"O valor com menor faturamento é de R$ {menorFaturamento:N2}");
+Console.WriteLine($"A média do faturamento do mês é R$ {media:N2}"); 
+
+class FaturamentoDia
     {
         public DateTime Data { get; set; }
         public decimal Valor { get; set; }
     }
 
-    class FaturamentoMes
+class FaturamentoMes
     {
         public string Mes { get; set; }
         public int Ano { get; set; }

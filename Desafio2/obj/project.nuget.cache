@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GmtNA1NuyZeZJJpp5gJpVOV715rsQ7AINb7c0gnZyRJ1tkMu4pkASPM1us0IgY9wW6EFXYYSW4Z4c6IeAyUQ5w==",
+  "dgSpecHash": "biAOVCt9o9cmAjF3Wyx71KRVZVq6hL7DddMmcLw3hPa4UdL76UwOdQGa9YgIab5UVv62OQMME1I0qE7EkfguEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oneon\\OneDrive\\Desktop\\dotnet\\dotnet.csproj",
+  "projectFilePath": "C:\\Users\\Sindauto_Conecta\\Desktop\\Desafiosdotnet\\Desafio2\\dotnet.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\oneon\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\Sindauto_Conecta\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }
